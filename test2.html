@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang=ko dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        *{margin: 0; padding: 0;}
+        @font-face {
+        font-family: 'HSGaeulSenggak20';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSGaeulSenggak20.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+        .wrap{
+        width: 862px;
+        margin: 0 auto;
+        background-color: brown;
+      }
+      nav{
+        width:100%;
+        height: 60px;
+        position: relative;
+      }
+      nav .menu_box{
+        height: 50px;
+        width: 100%;
+        background-color: brown;
+        /* background-color: skyblue; */
+        position: absolute;
+        left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        }
+      nav .menu_box .m_li{
+        list-style: none;
+        float: left;
+        width: 172px;
+        height: 100%;
+        text-align: center;
+        line-height: 50px;
+        font-family: 'HSGaeulSenggak20';
+        transition: background-color 1s, border 3s;
+        transition-timing-function: ease-in;
+      }
+      .m_li:hover{
+        background-color: red;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .box1{
+        width: 340px;
+        height: 50px;
+        background-color: red;
+        margin: 0 auto;
+      }
+      .box1 h6{
+        line-height: 22px;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+}
+      .box2{
+        width: 800px;
+        height: 300px;
+        background-color: white;
+        margin: 0 auto;
+      }
+
+      .box2 .l_img{
+        height: 180px;
+        width: 23%;
+        margin: 1% 1%;
+        float: left;
+    }
+    </style>
+  </head>
+  <body>
+        <div class="wrap">
+            <header>
+                <div class="m_img">
+                    <img src="img/kimchi1.png">
+    
+                </div>
+            </header>
+            <nav>
+              <ul class="menu_box">
+                <li class="m_li">밥맛나는김치 
+                </li>
+                <li class="m_li">맑은물 김치
+                </li>
+                <li class="m_li">프리미엄 김치
+                </li>
+                <li class="m_li">세트 김치
+                </li>
+                <li class="m_li">내가 만든 세트 김치
+                </li>
+              </ul>
+            </nav>
+            <br>
+            <br>
+            <br>
+            <section>
+                <div class="box1">
+                    <h6>태서 푸드 BEST!</h6>
+                </div>
+                <div class="box2">
+                    <div class="l_img">
+                    <img src = "img/virgink.PNG">
+                </div>
+                <div class="l_img">
+                    <img src = "img/giveup.PNG">
+                </div>
+                <div class="l_img">
+                    <img src = "img/Potatok.PNG">
+                </div>
+                <div class="l_img">
+                    <img src = "img/godk.PNG"
+                </div>
+
+                </div>
+            </section>
+          </div>
+  </body>
+</html>
