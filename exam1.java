@@ -1,25 +1,23 @@
-package Practice;
-
-import java.util.Scanner;
+package Java_Exam;
 
 public class exam1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("나이 : ");
-        int age = sc.nextInt();
+        int[] answer = { 1,4,4,3,1,4,4,2,1,3,2 };
+        int[] counter = new int[4];
 
-        if(age >= 20 && age <30){
-            System.out.print("20대시군요");
+        for(int i=0; i < answer.length;i++) {
+            counter[answer[i]-1]++;
         }
-        else if(age >= 10 && age <20) {
-            System.out.print("10대시군요");
+
+        for(int i=0; i < counter.length;i++) {
+            System.out.print(counter[i]);
+
+            for(int j =0; j < counter[i]; j++){
+
+                System.out.print("*");
+
+            }
         }
-        else if(age >= 30) {
-            System.out.print("나이가 있으시군요");
-        }
-        else {
-            System.out.print("어린이군요");
-        }
+
     }
-
 }

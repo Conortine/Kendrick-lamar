@@ -1,14 +1,40 @@
-package Practice;
+package Java_Exam;
 
-public class exam5 {
-    public static void main(String[] args) {
-        var line = "";
-        for (var j = 0; j < 10; j++) {
-            for (var i = 0; i < 10; i++) {
-                line += (j + i + 1) % 10 + ' ';
-            }
-            System.out.println();
+class MyTv2 {
+    private boolean isPowerOn;
+    private int channel;
+    private int volume;
 
-        }
+    final int MAX_VOLUME = 100;
+    final int MIN_VOLUME = 0;
+    final int MAX_CHANNEL = 100;
+    final int MIN_CHANNEL = 1;
+
+    public void setPowerOn(boolean isPowerOn) {
+        this.isPowerOn = isPowerOn;
+    }
+    public int getChannel() {
+        return channel;
+    }
+    public void setChannel(int channel) {
+        if(channel > MAX_CHANNEL || channel < MIN_CHANNEL) return;
+        this.channel = channel;
+    }
+    public int getVolume() {
+        return volume;
+    }
+    public void setVolume(int volume) {
+        if(volume > MAX_VOLUME || volume < MIN_VOLUME )
+            this.volume = volume;
+    }
+}
+
+class exam5 {
+    public static void main(String args[]) {
+        MyTv2 t = new MyTv2();
+        t.setChannel(10);
+        System.out.println("CH:"+t.getChannel());
+        t.setVolume(20);
+        System.out.println("VOL:"+t.getVolume());
     }
 }
