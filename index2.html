@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    *{margin: 0; padding: 0;}
+    .wrap{
+        width: 800px;
+        margin: 0 auto;
+    }
+    header{
+        background-color: white;
+        width: 100%;
+        height: 120px;
+    }
+    header .logo_box{
+        width: 50%;
+        height: 100%;
+        /* background-color: palegoldenrod; */
+        position: relative;
+        float: left;
+    }
+    header nav{
+        width:  50%;
+        height: 100%;
+        /* background-color: grey; */
+        float: left;
+        position: relative;
+    }
+    header .logo{
+        width: 100%;
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+        margin-left: 50px;
+    }
+    header .logo img{
+        width: 200px;
+
+    }
+    header nav ul{
+        width: 100%;
+        position:absolute;
+        left:0; top: 50%;
+        transform: translateY(-50%);
+    }
+    header nav ul li{
+        list-style: none;
+        width: calc(100% /6);
+        float:left;
+        cursor: pointer;
+        text-align: center;
+        color:black;
+    }
+    header nav ul li:hover{
+        color:palegreen;
+    }
+    /* header 끝 */
+
+    section{
+        /* background-color:mediumaquamarine; */
+        width: 100%;
+        height: calc(100vh - 120px);
+        position: relative;
+    }
+    .s_art{
+        width: 100%;
+        height: 290px;
+        margin-top: 30px;
+        float: left;
+    }
+    .s_art .b_art{
+        width: 25%;
+        height: 100%;
+        float: left;
+        position: relative;
+    }
+    .s_art .b_art img{
+        width: 150px;
+    }
+    .s_art .b_art .b_texts{
+        text-align: center;
+        transform: translateX(-15%);
+        font-size: 14px;
+        font-weight: 100;
+    }
+    </style>
+  </head>
+  <body>
+    <div class ="wrap">
+        <header>
+            <div class="logo_box">
+                <a href="index1.html">
+                    <div class = "logo">
+                        <img src="img/logo.jpg" alt="">
+                </div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="menus">Home</li>
+                    <li class="menus">Blog</li>
+                    <li class="menus">Shop</li>
+                    <li class="menus">About</li>
+                    <li class="menus">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="s_art">
+                <div class="b_art">
+                    <img src="img/item01.jpg" alt="">
+                    <div class="b_texts">
+                        <p>I'm an item.</p>
+                    </div>
+                </div>
+                <div class="b_art">
+                    <img src="img/item02.jpg" alt="">
+                    <div class="b_texts">
+                        <p>I'm an item.</p>
+                    </div>
+                </div>
+                <div class="b_art">
+                    <img src="img/item03.jpg" alt="">
+                    <div class="b_texts">
+                        <p>I'm an item.</p>
+                    </div>
+                </div>
+                <div class="b_art">
+                    <img src="img/item04.jpg" alt="">
+                    <div class="b_texts">
+                        <p>I'm an item.</p>
+                    </div>
+                </div>
+                <div class="s_art">
+                    <div class="b_box">
+                        <div class="b_art">
+                            <img src="img/item05.jpg" alt="">
+                            <div class="b_texts">
+                                <p>I'm an item.</p>
+                            </div>
+                        </div>
+                        <div class="b_art">
+                            <img src="img/item06.jpg" alt="">
+                            <div class="b_texts">
+                                <p>I'm an item.</p>
+                            </div>
+                        </div>
+                        <div class="b_art">
+                            <img src="img/item07.jpg" alt="">
+                            <div class="b_texts">
+                                <p>I'm an item.</p>
+                            </div>
+                        </div>
+                        <div class="b_art">
+                            <img src="img/item08.jpg" alt="">
+                            <div class="b_texts">
+                                <p>I'm an item.</p>
+                            </div>
+                        </div>
+                    </div>
+
+        </section>
+    </div>
+  </body>
+</html>

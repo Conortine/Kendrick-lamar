@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    *{margin: 0; padding: 0;}
+    .wrap{
+        width: 800px;
+        margin: 0 auto;
+    }
+    header{
+        background-color: white;
+        width: 100%;
+        height: 120px;
+    }
+    header .logo_box{
+        width: 50%;
+        height: 100%;
+        /* background-color: palegoldenrod; */
+        position: relative;
+        float: left;
+    }
+    header nav{
+        width:  50%;
+        height: 100%;
+        /* background-color: grey; */
+        float: left;
+        position: relative;
+    }
+    header .logo{
+        width: 100%;
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+        margin-left: 50px;
+    }
+    header .logo img{
+        width: 200px;
+
+    }
+    header nav ul{
+        width: 100%;
+        position:absolute;
+        left:0; top: 50%;
+        transform: translateY(-50%);
+    }
+    header nav ul li{
+        list-style: none;
+        width: calc(100% /6);
+        float:left;
+        cursor: pointer;
+        text-align: center;
+        color:black;
+    }
+    header nav ul li:hover{
+        color:palegreen;
+    }
+    /* header 끝 */
+    
+    section{
+        /* background-color:mediumaquamarine; */
+        width: 100%;
+        height: calc(100vh - 120px);
+        position: relative;
+    }
+    .lbox, .mbox, .rbox{
+        float: left;
+        height: 100%;
+        position: relative;
+    }
+    .lbox{width: 49%;
+         height: 90%;
+          background-color: mediumaquamarine;
+    }    
+    .mbox{width: 2%;
+         height: 90%;
+          background-color: white;
+    }   
+    .rbox{width: 49%; 
+        height: 90%; 
+        background-color: aqua;
+    }
+    .s_textbox{
+        margin-top: 100px;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+    }
+    .s_textbox2{
+        margin-top: 100px;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+    }
+    .s_textbox2 .b_box{
+        width: 45%;
+        height: 100px;
+        float: left;
+    }
+    .s_textbox h3{
+        text-align: left;
+        font-size: 30px;
+        color:black;
+    }
+    .s_textbox p{
+        text-align: left;
+        font-size: 15px;
+        font-weight: none;
+        color:black;
+    }
+    .s_textbox input{
+        height: 20px;
+        border: 1px 0px 0px 0 solid rgb(0, 0, 0);
+        background-color: rgba(110, 96, 70, 0);
+    }
+    .s_textbox2 input{
+        width: 150px;
+        height: 20px;
+        border: 1px 0px 0px 0 solid rgb(0, 0, 0);
+        background-color: rgba(110, 96, 70, 0);
+    }
+    .s_textbox  button{
+        position: relative;
+        left: 50%;
+        transform: translateX(-150%);
+        height: 30px;
+        width: 120px;
+        margin-top: 30px;
+        color: white;
+        background-color: black;
+        border: 2px solid black;
+        transition: color 0.5s, background-color 0.5s;
+    }
+    .s_textbox2  button{
+        position: relative;
+        left: 50%;
+        transform: translateX(-160%);
+        height: 30px;
+        width: 120px;
+        margin-top: 30px;
+        color: white;
+        background-color: black;
+        border: 2px solid black;
+        transition: color 0.5s, background-color 0.5s;
+    }
+    .s_textbox button:hover{
+        color: black;
+        background-color: white;
+    }
+    .rbox textarea{
+        width: 90%; height: 150px;
+        margin-top: 100px;
+        box-sizing: border-box;
+        resize: none;
+        border: 2px solid black;
+        background-color: rgba(110, 96, 70, 0);
+    }
+    </style>
+  </head>
+  <body>
+    <div class ="wrap">
+        <header>
+            <div class="logo_box">
+                <a href="index1.html">
+                    <div class = "logo">
+                        <img src="img/logo.jpg" alt="">
+                </div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="menus">Home</li>
+                    <li class="menus">Blog</li>
+                    <li class="menus">Shop</li>
+                    <li class="menus">About</li>
+                    <li class="menus">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="lbox">
+                <div class="s_textbox">
+                    <h3>Sign Up For My Latest</h3><br>
+                    <p>Email*</p>
+                    <input type="email" name="" id="">
+                    <button type="button" name="button">Join</button> 
+                    <br><br><br><h3>Collabs</h3><br>
+                    <p>For PR and Commercial enquiries please contact:<br>info@mysite.com</p>
+                </div> 
+            </div>
+            <div class="mbox">
+            </div>
+            <div class="rbox">
+                <div class="s_textbox2">
+                    <p>You Can also reach out directly to me</p><br><br>
+                    <div class="b_box">
+                        <p> First Name</p>
+                        <input type="text" name="First Name" id=""><br><br>
+                        <p> First name></p>
+                        <input type="text" name="First Name" id=""><br><br><br>
+                        <p>Message</p>
+                    </div>
+                    <div class="b_box">
+                        <p> First Name</p>
+                        <input type="text" name="First Name" id=""><br><br>
+                        <p> First name></p>
+                        <input type="text" name="First Name" id=""><br><br>
+                    </div>
+                    <textarea name="name" cols="80" rows="8"></textarea>
+                    <button type="button" name="button">CLICK</button> 
+                </div> 
+            </div>
+        </section>
+    </div>
+  </body>
+</html>
