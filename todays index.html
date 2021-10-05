@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    *{margin: 0; padding: 0;}
+    .wrap{
+        width:900px;
+        margin: 0 auto;
+    }
+    .conbox1{
+        width: 100%;
+        height: 50px;
+        background-color: aqua;
+    }
+    .conbox2{
+        width: 100%;
+        height: 50px;
+        background-color: purple;
+    }
+    .conbox3{
+        width: 100%;
+        height: 50px;
+        background-color: indigo;
+    }
+    .menubox1{
+        width: 100%;
+        height: 100px;
+        background-color: orange;
+    }
+    .menubox2{
+        width: 100%;
+        height: 100px;
+        background-color: orange;
+    }
+    .menubox3{
+        width: 100%;
+        height: 100px;
+        background-color: orange;
+    }
+    p{
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+        <div class="conbox1">
+            <p>스크립트 기초1</p>
+        </div>
+        <div class="menubox1">
+        </div>   
+        <div class="conbox2">
+            <p>스크립트 기초2</p>
+        </div>
+        <div class="menubox2">
+        </div>  
+        <div class="conbox3">
+            <p>스크립트 기초3</p>
+        </div>
+        <div class="menubox3">
+        </div>        
+    </div>
+    <script type="text/javascript">
+        var box1=document.getElementsByClassName('conbox1')[0];
+        var box2=document.getElementsByClassName('conbox2')[0];
+        var box3=document.getElementsByClassName('conbox3')[0];
+        var menubox1=document.getElementsByClassName('menubox1')[0];
+        var menubox2=document.getElementsByClassName('menubox2')[0];
+        var menubox3=document.getElementsByClassName('menubox3')[0];
+
+        img_hide()
+        box1.addEventListener("click", function() {
+            count = 0;
+            img_hide();
+            menubox1.style.display="block";
+        });
+        box2.addEventListener("click", function() {
+            count = 1;
+            img_hide();
+            menubox2.style.display="block";
+        });
+        box3.addEventListener("click", function() {
+            count = 2;
+            img_hide();
+            menubox3.style.display="block";
+        });
+
+
+        function img_hide(){
+            menubox1.style.display="none";
+            menubox2.style.display="none";
+            menubox3.style.display="none";
+        }
+
+    </script>
+  </body>
+</html>
